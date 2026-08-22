@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.6.11828.311
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexBank.Logica", "BibliotecaClases\NexBank.Logica.csproj", "{9EBE34F8-3B0D-4615-A8CC-2D341F758BF5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexBank.Consola", "NexBank.Consola\NexBank.Consola.csproj", "{29D65CBD-90BD-49AE-B0F1-6CC84844D9FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexBank.GUI", "NexBank.GUI\NexBank.GUI.csproj", "{23DA7A54-6257-4BBA-8D72-EABF8C74F887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexBank.Logica", "NexBank.Logica\NexBank.Logica.csproj", "{C7547654-4B95-CBD7-F5DF-55CD09C0F80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9EBE34F8-3B0D-4615-A8CC-2D341F758BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EBE34F8-3B0D-4615-A8CC-2D341F758BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EBE34F8-3B0D-4615-A8CC-2D341F758BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EBE34F8-3B0D-4615-A8CC-2D341F758BF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{29D65CBD-90BD-49AE-B0F1-6CC84844D9FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{29D65CBD-90BD-49AE-B0F1-6CC84844D9FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D65CBD-90BD-49AE-B0F1-6CC84844D9FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{23DA7A54-6257-4BBA-8D72-EABF8C74F887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23DA7A54-6257-4BBA-8D72-EABF8C74F887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23DA7A54-6257-4BBA-8D72-EABF8C74F887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7547654-4B95-CBD7-F5DF-55CD09C0F80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7547654-4B95-CBD7-F5DF-55CD09C0F80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7547654-4B95-CBD7-F5DF-55CD09C0F80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7547654-4B95-CBD7-F5DF-55CD09C0F80C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

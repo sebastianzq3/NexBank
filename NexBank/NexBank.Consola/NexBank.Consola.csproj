@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BibliotecaClases\NexBank.Logica.csproj" />
+    <ProjectReference Include="..\NexBank.Logica\NexBank.Logica.csproj" />
   </ItemGroup>
 
 </Project>
