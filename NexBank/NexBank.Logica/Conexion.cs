@@ -23,11 +23,11 @@ namespace NexBank.Logica
 
         public SqlConnection CrearConexion()
         {
-            SqlConnection Cadena = new SqlConnection();
+            SqlConnection SqlCon = new SqlConnection();
 
             try
             {
-                Cadena.ConnectionString = "Server=" + this.Servidor +
+                SqlCon.ConnectionString = "Server=" + this.Servidor +
                                             "; Database=" + this.Base +
                                             "; User Id=" + this.Usuario +
                                             "; Password=" + this.Clave +
@@ -35,14 +35,14 @@ namespace NexBank.Logica
             }
             catch (Exception ex)
             {
-                Cadena = null;
+                SqlCon = null;
                 throw ex;
             }
 
-            return Cadena;
+            return SqlCon;
         }
 
-        public static Conexion crearInstancia()
+        public static Conexion CrearInstancia()
         {
             if (Con == null)
             {
