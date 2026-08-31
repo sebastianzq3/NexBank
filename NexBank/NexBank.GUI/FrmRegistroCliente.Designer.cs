@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            btnMenu = new Button();
+            btnSalir = new Button();
             btnReporte = new Button();
             btnDarDeBaja = new Button();
             btnActualziar = new Button();
@@ -46,50 +46,55 @@
             btnGuardar = new Button();
             btnCancelar = new Button();
             btnBuscar = new Button();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvLista).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 57, 127);
-            panel1.Controls.Add(btnMenu);
+            panel1.Controls.Add(btnSalir);
             panel1.Controls.Add(btnReporte);
             panel1.Controls.Add(btnDarDeBaja);
             panel1.Controls.Add(btnActualziar);
             panel1.Controls.Add(btnNuevo);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(604, 0);
+            panel1.Location = new Point(1072, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 437);
+            panel1.Size = new Size(298, 749);
             panel1.TabIndex = 0;
             // 
-            // btnMenu
+            // btnSalir
             // 
-            btnMenu.BackColor = Color.FromArgb(22, 151, 164);
-            btnMenu.FlatAppearance.BorderSize = 0;
-            btnMenu.FlatStyle = FlatStyle.Flat;
-            btnMenu.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMenu.ForeColor = Color.White;
-            btnMenu.Location = new Point(35, 346);
-            btnMenu.Name = "btnMenu";
-            btnMenu.Size = new Size(128, 43);
-            btnMenu.TabIndex = 4;
-            btnMenu.Text = "Menú";
-            btnMenu.TextAlign = ContentAlignment.MiddleLeft;
-            btnMenu.UseVisualStyleBackColor = false;
+            btnSalir.BackColor = Color.Maroon;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Cambria", 18F, FontStyle.Bold);
+            btnSalir.ForeColor = Color.White;
+            btnSalir.Location = new Point(34, 615);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Padding = new Padding(5, 0, 0, 0);
+            btnSalir.Size = new Size(231, 100);
+            btnSalir.TabIndex = 4;
+            btnSalir.Text = "Salir";
+            btnSalir.TextAlign = ContentAlignment.MiddleLeft;
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnReporte
             // 
             btnReporte.BackColor = Color.FromArgb(22, 151, 164);
             btnReporte.FlatAppearance.BorderSize = 0;
             btnReporte.FlatStyle = FlatStyle.Flat;
-            btnReporte.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReporte.Font = new Font("Cambria", 18F, FontStyle.Bold);
             btnReporte.ForeColor = Color.White;
-            btnReporte.Location = new Point(35, 270);
+            btnReporte.Location = new Point(34, 470);
             btnReporte.Name = "btnReporte";
-            btnReporte.Size = new Size(128, 43);
+            btnReporte.Padding = new Padding(5, 0, 0, 0);
+            btnReporte.Size = new Size(231, 100);
             btnReporte.TabIndex = 3;
             btnReporte.Text = "Reporte";
             btnReporte.TextAlign = ContentAlignment.MiddleLeft;
@@ -100,11 +105,12 @@
             btnDarDeBaja.BackColor = Color.FromArgb(22, 151, 164);
             btnDarDeBaja.FlatAppearance.BorderSize = 0;
             btnDarDeBaja.FlatStyle = FlatStyle.Flat;
-            btnDarDeBaja.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDarDeBaja.Font = new Font("Cambria", 18F, FontStyle.Bold);
             btnDarDeBaja.ForeColor = Color.White;
-            btnDarDeBaja.Location = new Point(35, 194);
+            btnDarDeBaja.Location = new Point(34, 325);
             btnDarDeBaja.Name = "btnDarDeBaja";
-            btnDarDeBaja.Size = new Size(128, 43);
+            btnDarDeBaja.Padding = new Padding(5, 0, 0, 0);
+            btnDarDeBaja.Size = new Size(231, 100);
             btnDarDeBaja.TabIndex = 2;
             btnDarDeBaja.Text = "Dar de baja";
             btnDarDeBaja.TextAlign = ContentAlignment.MiddleLeft;
@@ -115,11 +121,12 @@
             btnActualziar.BackColor = Color.FromArgb(22, 151, 164);
             btnActualziar.FlatAppearance.BorderSize = 0;
             btnActualziar.FlatStyle = FlatStyle.Flat;
-            btnActualziar.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnActualziar.Font = new Font("Cambria", 18F, FontStyle.Bold);
             btnActualziar.ForeColor = Color.White;
-            btnActualziar.Location = new Point(35, 118);
+            btnActualziar.Location = new Point(34, 180);
             btnActualziar.Name = "btnActualziar";
-            btnActualziar.Size = new Size(128, 43);
+            btnActualziar.Padding = new Padding(5, 0, 0, 0);
+            btnActualziar.Size = new Size(231, 100);
             btnActualziar.TabIndex = 1;
             btnActualziar.Text = "Actualizar";
             btnActualziar.TextAlign = ContentAlignment.MiddleLeft;
@@ -130,11 +137,12 @@
             btnNuevo.BackColor = Color.FromArgb(22, 151, 164);
             btnNuevo.FlatAppearance.BorderSize = 0;
             btnNuevo.FlatStyle = FlatStyle.Flat;
-            btnNuevo.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNuevo.Font = new Font("Cambria", 18F, FontStyle.Bold);
             btnNuevo.ForeColor = Color.White;
-            btnNuevo.Location = new Point(35, 42);
+            btnNuevo.Location = new Point(34, 35);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(128, 43);
+            btnNuevo.Padding = new Padding(5, 0, 0, 0);
+            btnNuevo.Size = new Size(231, 100);
             btnNuevo.TabIndex = 0;
             btnNuevo.Text = "Nuevo";
             btnNuevo.TextAlign = ContentAlignment.MiddleLeft;
@@ -147,48 +155,50 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(604, 100);
+            panel2.Size = new Size(1072, 161);
             panel2.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Cambria", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Cambria", 72F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.Location = new Point(108, 23);
             label1.Name = "label1";
-            label1.Size = new Size(411, 57);
+            label1.Size = new Size(818, 112);
             label1.TabIndex = 0;
             label1.Text = "Clientes y Cuentas";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(22, 131);
+            label2.Font = new Font("Cambria", 15.75F);
+            label2.Location = new Point(18, 187);
             label2.Name = "label2";
-            label2.Size = new Size(184, 19);
+            label2.Size = new Size(241, 25);
             label2.TabIndex = 2;
             label2.Text = "Documento de Identidad:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(66, 168);
+            label3.Font = new Font("Cambria", 15.75F);
+            label3.Location = new Point(62, 224);
             label3.Name = "label3";
-            label3.Size = new Size(140, 19);
+            label3.Size = new Size(182, 25);
             label3.TabIndex = 3;
             label3.Text = "Nombre Completo:";
             // 
             // txtDocumentoIdentidad
             // 
-            txtDocumentoIdentidad.Location = new Point(232, 124);
+            txtDocumentoIdentidad.Location = new Point(264, 184);
             txtDocumentoIdentidad.Name = "txtDocumentoIdentidad";
             txtDocumentoIdentidad.Size = new Size(350, 26);
             txtDocumentoIdentidad.TabIndex = 4;
             // 
             // txtNombreCompleto
             // 
-            txtNombreCompleto.Location = new Point(232, 161);
+            txtNombreCompleto.Location = new Point(264, 221);
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.Size = new Size(350, 26);
             txtNombreCompleto.TabIndex = 5;
@@ -196,30 +206,31 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(145, 272);
+            label4.Font = new Font("Cambria", 15.75F);
+            label4.Location = new Point(141, 328);
             label4.Name = "label4";
-            label4.Size = new Size(61, 19);
+            label4.Size = new Size(80, 25);
             label4.TabIndex = 6;
             label4.Text = "Buscar:";
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(232, 265);
+            txtBuscar.Location = new Point(264, 325);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new Size(299, 26);
             txtBuscar.TabIndex = 7;
-            txtBuscar.TextChanged += textBox3_TextChanged;
             // 
             // dtgvLista
             // 
             dtgvLista.AllowUserToAddRows = false;
             dtgvLista.AllowUserToDeleteRows = false;
             dtgvLista.AllowUserToOrderColumns = true;
+            dtgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             dtgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgvLista.Location = new Point(22, 297);
+            dtgvLista.Location = new Point(40, 386);
             dtgvLista.Name = "dtgvLista";
             dtgvLista.ReadOnly = true;
-            dtgvLista.Size = new Size(560, 118);
+            dtgvLista.Size = new Size(465, 329);
             dtgvLista.TabIndex = 8;
             // 
             // btnGuardar
@@ -229,7 +240,7 @@
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(232, 204);
+            btnGuardar.Location = new Point(264, 264);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(128, 43);
             btnGuardar.TabIndex = 5;
@@ -244,7 +255,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(403, 204);
+            btnCancelar.Location = new Point(435, 264);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(128, 43);
             btnCancelar.TabIndex = 9;
@@ -259,7 +270,7 @@
             btnBuscar.FlatStyle = FlatStyle.Flat;
             btnBuscar.Font = new Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBuscar.ForeColor = Color.White;
-            btnBuscar.Location = new Point(537, 265);
+            btnBuscar.Location = new Point(569, 325);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(45, 26);
             btnBuscar.TabIndex = 10;
@@ -268,11 +279,24 @@
             btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(604, 386);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.Size = new Size(439, 329);
+            dataGridView1.TabIndex = 11;
+            // 
             // FrmRegistroCliente
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 437);
+            ClientSize = new Size(1370, 749);
+            Controls.Add(dataGridView1);
             Controls.Add(btnBuscar);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
@@ -286,16 +310,17 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
-            MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmRegistroCliente";
+            WindowState = FormWindowState.Maximized;
             Load += FrmRegistroCliente_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dtgvLista).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -313,12 +338,13 @@
         private TextBox txtBuscar;
         private DataGridView dtgvLista;
         private Button btnNuevo;
-        private Button btnMenu;
+        private Button btnSalir;
         private Button btnReporte;
         private Button btnDarDeBaja;
         private Button btnActualziar;
         private Button btnGuardar;
         private Button btnCancelar;
         private Button btnBuscar;
+        private DataGridView dataGridView1;
     }
 }

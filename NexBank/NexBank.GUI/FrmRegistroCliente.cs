@@ -9,21 +9,22 @@ namespace NexBank.GUI
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrmRegistroCliente_Load(object sender, EventArgs e)
         {
             Cliente cln = new Cliente();
             dtgvLista.DataSource = cln.ListarClientes("%");
+
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Cliente cln = new Cliente();
             dtgvLista.DataSource = cln.ListarClientes(txtBuscar.Text);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
